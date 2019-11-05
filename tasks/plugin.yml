@@ -6,17 +6,12 @@
   vars:
     plugin_repo: "{{ plugin.repo | default }}"
 
-- name: Set asdf_plugin_dependencies
-  set_fact:
-    asdf_plugin_dependencies: "{{ __asdf_dependencies[plugin.name] }}"
-  when: asdf_dependencies[plugin.name] is not defined
-
 - name: "{{ plugin.name }} - Install dependencies"
   apt:
-    name: "{{ asdf_plugin_dependencies }}"
+    name: "{{ __asdf_dependencies[plugin.name] }}"
     state: present
   become: true
-  when: asdf_plugin_dependencies is defined
+  when: __asdf_dependencies[plugin.name] is defined
 
 #- name: "{{ plugin.name }} - Install keyring"
 #  command: "bash {{ asdf_dir }}/plugins/nodejs/bin/import-release-team-keyring"
