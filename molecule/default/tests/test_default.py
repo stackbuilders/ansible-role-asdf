@@ -7,9 +7,8 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 ).get_hosts('all')
 
 
-def test_hosts_file(host):
-    f = host.file('/etc/hosts')
+def test_asdf_version(host):
+    cmd = host.run('/root/.asdf/bin/asdf --version')
 
-    assert f.exists
-    assert f.user == 'root'
-    assert f.group == 'root'
+    assert cmd.rc == 0
+    assert 'v0.7.5' in cmd.stdout

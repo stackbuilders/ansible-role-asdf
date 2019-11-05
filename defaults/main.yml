@@ -1,2 +1,6 @@
 ---
-# defaults file for ansible-role-asdf
+asdf_repo: https://github.com/asdf-vm/asdf.git
+asdf_dir: ~/.asdf
+asdf_version: v0.7.5
+
+asdf_legacy_version_file: "yes"

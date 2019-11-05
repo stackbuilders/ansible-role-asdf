@@ -1,0 +1,10 @@
+---
+- name: Copy initializer
+  template:
+    src: asdf.fish.j2
+    dest: ~/.config/fish/conf.d/asdf.fish
+
+- name: Create completion script
+  template:
+    src: completion.fish.j2
+    dest: ~/.config/fish/completions/asdf.fish
