@@ -1,0 +1,7 @@
+---
+- name: Add initializer
+  blockinfile:
+    path: ~/.bashrc
+    block: |
+      . {{ asdf_dir }}/asdf.sh
+      . {{ asdf_dir }}/completions/asdf.bash
