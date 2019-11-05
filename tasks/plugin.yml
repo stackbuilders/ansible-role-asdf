@@ -13,10 +13,6 @@
   become: true
   when: __asdf_dependencies[plugin.name] is defined
 
-- name: "{{ plugin.name }} - Run scripts"
-  command: "{{ asdf_dir }}/plugins/nodejs/bin/import-release-team-keyring"
-  when: plugin.name == "nodejs"
-
 - name: "{{ plugin.name }} - Install versions"
   command: "{{ asdf_dir }}/bin/asdf install {{ plugin.name }} {{ item }}"
   args:
