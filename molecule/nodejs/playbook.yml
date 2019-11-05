@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  roles:
+    - role: ansible-role-asdf
+      vars:
+        asdf_plugins:
+          - name: nodejs
+            versions: 13.0.1
