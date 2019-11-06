@@ -5,6 +5,7 @@ services: docker
 
 env:
   - TOXENV=py37-ansible29 SCENARIO_NAME=default
+  - TOXENV=py37-ansible29 SCENARIO_NAME=nodejs
   - TOXENV=py37-ansible29 SCENARIO_NAME=python
   - TOXENV=py37-ansible29 SCENARIO_NAME=ruby
 
