@@ -11,11 +11,7 @@
     dest: "{{ asdf_dir }}"
     version: "{{ asdf_version }}"
 
-- import_tasks: bash.yml
-  when: ansible_user_shell == "/bin/bash"
-
-- import_tasks: fish.yml
-  when: ansible_user_shell == "/usr/bin/fish"
+- import_tasks: shell.yml
 
 - name: Create configuration script
   template:
