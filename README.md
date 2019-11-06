@@ -1,6 +1,8 @@
 # Ansible Role: asdf
 
-An Ansible role that install asdf on Debian.
+[![Build Status](https://travis-ci.org/sestrella/ansible-role-asdf.svg?branch=master)](https://travis-ci.org/sestrella/ansible-role-asdf)
+
+Installs asdf on Linux.
 
 ## Requirements
 

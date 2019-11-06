@@ -1,0 +1,15 @@
+---
+language: python
+python: 3.7
+services: docker
+
+env:
+	- TOXENV=py37-ansible29 SCENARIO_NAME=default
+	- TOXENV=py37-ansible29 SCENARIO_NAME=python
+	- TOXENV=py37-ansible29 SCENARIO_NAME=ruby
+
+install:
+	- pip install tox-travis
+
+script:
+	- tox -- molecule test -s $SCENARIO_NAME
