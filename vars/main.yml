@@ -1,8 +1,11 @@
 ---
+__asdf_dependencies:
+  - curl
+  - git
+
 __asdf_plugins_dependencies:
   python:
     - build-essential
-    - curl
     - libbz2-dev
     - libffi-dev
     - liblzma-dev
@@ -23,7 +26,6 @@ __asdf_plugins_dependencies:
     - autoconf
     - bison
     - build-essential
-    - curl
     - libffi-dev
     - libgdbm-dev
     - libgdbm6

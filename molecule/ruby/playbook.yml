@@ -7,3 +7,4 @@
         asdf_plugins:
           - name: ruby
             versions: 2.6.5
+            global: 2.6.5

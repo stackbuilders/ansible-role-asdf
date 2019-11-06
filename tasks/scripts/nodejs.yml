@@ -1,0 +1,4 @@
+---
+- name: nodejs - Import keyring
+  command: "{{ asdf_dir }}/plugins/nodejs/bin/import-release-team-keyring"
+  changed_when: false

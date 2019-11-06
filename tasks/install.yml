@@ -1,7 +1,7 @@
 ---
 - name: Install dependencies
   apt:
-    name: git
+    name: "{{ __asdf_dependencies }}"
     state: present
   become: true
 

@@ -8,7 +8,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 def test_python_version(host):
-    cmd = host.run('/root/.asdf/installs/python/3.8.0/bin/python --version')
+    cmd = host.run('/bin/bash -lc \'python --version\'')
 
     assert cmd.rc == 0
     assert '3.8.0' in cmd.stdout

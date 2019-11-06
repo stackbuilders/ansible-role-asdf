@@ -4,3 +4,6 @@
 
 - import_tasks: shell/fish.yml
   when: ansible_user_shell == "/usr/bin/fish"
+
+- import_tasks: shell/zsh.yml
+  when: ansible_user_shell == "/bin/zsh"

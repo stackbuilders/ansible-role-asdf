@@ -7,8 +7,8 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 ).get_hosts('all')
 
 
-def test_asdf_version(host):
-    cmd = host.run('/bin/bash -lc \'asdf --version\'')
+def test_node_version(host):
+    cmd = host.run('/bin/bash -lc \'node --version\'')
 
     assert cmd.rc == 0
-    assert 'v0.7.5' in cmd.stdout
+    assert '13.0.1' in cmd.stdout

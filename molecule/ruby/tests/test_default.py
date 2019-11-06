@@ -8,7 +8,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 def test_ruby_version(host):
-    cmd = host.run('/root/.asdf/installs/ruby/2.6.5/bin/ruby --version')
+    cmd = host.run('/bin/bash -lc \'ruby --version\'')
 
     assert cmd.rc == 0
     assert '2.6.5' in cmd.stdout
