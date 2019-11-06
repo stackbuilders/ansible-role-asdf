@@ -4,24 +4,12 @@ python: 3.7
 services: docker
 
 env:
-  # Ansible 2.7
-  - TOXENV=py37-ansible27 SCENARIO_NAME=default
-  - TOXENV=py37-ansible27 SCENARIO_NAME=nodejs
-  - TOXENV=py37-ansible27 SCENARIO_NAME=python
-  - TOXENV=py37-ansible27 SCENARIO_NAME=ruby
-  # Ansible 2.8
-  - TOXENV=py37-ansible28 SCENARIO_NAME=default
-  - TOXENV=py37-ansible28 SCENARIO_NAME=nodejs
-  - TOXENV=py37-ansible28 SCENARIO_NAME=python
-  - TOXENV=py37-ansible28 SCENARIO_NAME=ruby
-  # Ansible 2.9
-  - TOXENV=py37-ansible29 SCENARIO_NAME=default
-  - TOXENV=py37-ansible29 SCENARIO_NAME=nodejs
-  - TOXENV=py37-ansible29 SCENARIO_NAME=python
-  - TOXENV=py37-ansible29 SCENARIO_NAME=ruby
+  - TOXENV=py37-ansible27
+  - TOXENV=py37-ansible28
+  - TOXENV=py37-ansible29
 
 install:
   - pip install tox-travis
 
 script:
-  - tox -- molecule test -s $SCENARIO_NAME
+  - tox
