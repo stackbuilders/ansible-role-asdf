@@ -8,10 +8,10 @@
 
 - name: "{{ plugin.name }} - Install dependencies"
   apt:
-    name: "{{ __asdf_dependencies[plugin.name] }}"
+    name: "{{ __asdf_plugins_dependencies[plugin.name] }}"
     state: present
   become: true
-  when: __asdf_dependencies[plugin.name] is defined
+  when: __asdf_plugins_dependencies[plugin.name] is defined
 
 - name: "{{ plugin.name }} - Install versions"
   command: "{{ asdf_dir }}/bin/asdf install {{ plugin.name }} {{ item }}"

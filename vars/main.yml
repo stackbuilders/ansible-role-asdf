@@ -1,5 +1,5 @@
 ---
-__asdf_dependencies:
+__asdf_plugins_dependencies:
   python:
     - build-essential
     - curl
