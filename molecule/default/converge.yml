@@ -5,6 +5,6 @@
     - role: ansible-role-asdf
       vars:
         asdf_plugins:
-          - name: nodejs
-            versions: 13.0.1
-            global: 13.0.1
+          - name: ruby
+            versions: [2.7.2]
+            global: 2.7.2
