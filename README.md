@@ -63,16 +63,31 @@ None.
 
 ## Development
 
-Install tox:
+Create a virtual environment:
 
 ```sh
-pip install tox
+python -m venv .venv
+```
+
+Activate the virtual environment:
+
+```sh
+# bash, or zsh
+source .venv/bin/activate
+# fish
+source .venv/bin/activate.fish
+```
+
+Install the dependencies:
+
+```sh
+pip install -r requirements.txt
 ```
 
 Run all the tests:
 
 ```sh
-tox -e py37-ansible29 -- molecule test
+mol test --all
 ```
 
 ## License
