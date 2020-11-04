@@ -29,24 +29,24 @@ asdf_dir: ~/.asdf
 The location where asdf will be cloned.
 
 ```yml
-asdf_version: v0.7.5
+asdf_version: v0.8.0
 ```
 
 The version of asdf that will be installed.
 
 ```yml
-asdf_legacy_version_file: "no"
+asdf_legacy_version_file: false
 ```
 
-If set to `yes` it will cause plugins that support this feature to read the
+If set to `true` it will cause plugins that support this feature to read the
 version files used by other version managers (e.g. `.ruby-version` in the case
 of Ruby’s `rbenv`).
 
 ```yml
-asdf_use_release_candidates: "no"
+asdf_use_release_candidates: false
 ```
 
-If set to `yes` it will cause the `asdf update` command to upgrade to the
+If set to `true` it will cause the `asdf update` command to upgrade to the
 latest release candidate release instead of the latest semantic version.
 
 ### Dependencies

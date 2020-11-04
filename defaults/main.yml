@@ -5,5 +5,5 @@ asdf_dir: ~/.asdf
 asdf_version: v0.8.0
 
 # Settings
-asdf_legacy_version_file: "no"
-asdf_use_release_candidates: "no"
+asdf_legacy_version_file: false
+asdf_use_release_candidates: false

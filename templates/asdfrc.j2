@@ -1,2 +1,2 @@
-legacy_version_file = {{ asdf_legacy_version_file }}
-use_release_candidates = {{ asdf_use_release_candidates }}
+legacy_version_file = {{ asdf_legacy_version_file if 'yes' else 'no' }}
+use_release_candidates = {{ asdf_use_release_candidates if 'yes' else 'no' }}
