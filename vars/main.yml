@@ -4,6 +4,7 @@ __asdf_dependencies:
 
 __asdf_plugins_dependencies:
   nodejs:
+    - curl
     - gpg
 
   python:
