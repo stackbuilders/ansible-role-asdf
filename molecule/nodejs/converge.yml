@@ -2,7 +2,7 @@
 - name: Converge
   hosts: all
   roles:
-    - include_role: ansible-role-asdf
+    - role: ansible-role-asdf
       vars:
         asdf_plugins:
           - name: nodejs
