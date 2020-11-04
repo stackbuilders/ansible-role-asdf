@@ -16,6 +16,7 @@ jobs:
         scenario:
           - default
           - nodejs
+          - python
 
     steps:
       - uses: actions/checkout@v2
