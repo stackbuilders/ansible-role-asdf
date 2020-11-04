@@ -1,5 +1,5 @@
 ---
-name: linux
+name: CI
 
 on:
   push:
@@ -16,5 +16,11 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore_keys: |
+            ${{ runner.os }}-pip-
       - run: pip install -r requirements.txt
       - run: mol test
