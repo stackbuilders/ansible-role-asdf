@@ -1,3 +1,1 @@
-.tox/
 .venv/
-molecule/*/tests/__pycache__/
