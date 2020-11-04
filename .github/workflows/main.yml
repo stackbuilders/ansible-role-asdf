@@ -17,6 +17,7 @@ jobs:
           - default
           - nodejs
           - python
+          - ruby
 
     steps:
       - uses: actions/checkout@v2

@@ -1,0 +1,16 @@
+---
+dependency:
+  name: galaxy
+
+driver:
+  name: docker
+
+platforms:
+  - name: ruby_debian_10
+    image: debian:10
+
+provisioner:
+  name: ansible
+
+verifier:
+  name: ansible
