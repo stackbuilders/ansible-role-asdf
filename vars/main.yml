@@ -4,6 +4,9 @@ __asdf_dependencies:
   - git
 
 __asdf_plugins_dependencies:
+  nodejs:
+    - gpg
+
   python:
     - build-essential
     - libbz2-dev
