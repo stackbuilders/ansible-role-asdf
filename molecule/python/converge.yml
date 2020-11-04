@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts: all
+  roles:
+    - role: ansible-role-asdf
+      vars:
+        asdf_plugins:
+          - name: python
+            versions: [3.9.0]
+            global: 3.9.0

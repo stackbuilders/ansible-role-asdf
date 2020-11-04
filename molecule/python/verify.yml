@@ -1,0 +1,9 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - command: ~/.asdf/shims/python --version
+      register: result
+    - assert:
+        that: "'3.9.0' in result.stdout"
