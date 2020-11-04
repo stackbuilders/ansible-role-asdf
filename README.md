@@ -1,6 +1,7 @@
 # Ansible Role: asdf
 
-[![Build Status](https://travis-ci.org/sestrella/ansible-role-asdf.svg?branch=master)](https://travis-ci.org/sestrella/ansible-role-asdf)
+![CI](https://github.com/sestrella/ansible-role-asdf/workflows/CI/badge.svg)
+
 
 Installs [asdf](https://github.com/asdf-vm/asdf) on Linux.
 
