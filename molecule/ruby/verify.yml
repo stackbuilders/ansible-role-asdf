@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: false
   tasks:
-    - command: ~/.asdf/bin/asdf --version
+    - command: ~/.asdf/shims/ruby --version
       register: result
     - assert:
-        that: "'0.8.0' in result.stdout"
+        that: "'2.7.2' in result.stdout"

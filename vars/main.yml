@@ -1,6 +1,5 @@
 ---
 __asdf_dependencies:
-  - curl
   - git
 
 __asdf_plugins_dependencies:
