@@ -6,7 +6,7 @@ driver:
   name: docker
 
 platforms:
-  - name: default_debian_10
+  - name: nodejs_debian_10
     image: debian:10
 
 provisioner:

@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts: all
+  roles:
+    - include_role: ansible-role-asdf
+      vars:
+        asdf_plugins:
+          - name: nodejs
+            versions: [15.0.1]
+            global: 15.0.1
