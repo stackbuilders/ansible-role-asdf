@@ -32,7 +32,7 @@ molecule==3.1.5
 molecule-docker==0.3.3
 nodeenv==1.5.0
 packaging==20.7
-paramiko==2.7.2
+paramiko==2.10.1
 pathspec==0.8.1
 pexpect==4.8.0
 pluggy==0.13.1
