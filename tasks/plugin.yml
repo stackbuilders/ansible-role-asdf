@@ -13,8 +13,6 @@
   become: true
   when: __asdf_plugins_dependencies[plugin.name] is defined
 
-- import_tasks: scripts.yml
-
 - name: "{{ plugin.name }} - Install versions"
   command: "{{ ansible_user_shell }} -lc 'asdf install {{ plugin.name }} {{ item }}'"
   args:

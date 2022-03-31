@@ -1,3 +1,0 @@
----
-- import_tasks: scripts/nodejs.yml
-  when: plugin.name == "nodejs"
