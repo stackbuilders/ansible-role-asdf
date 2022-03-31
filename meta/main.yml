@@ -1,7 +1,10 @@
 ---
 galaxy_info:
+  namespace: stackbuilders
+  role_name: asdf
   author: Sebastián Estrella
   description: Installs asdf on Linux
+  company: Stack Builders
   license: MIT
   min_ansible_version: 2.7
   platforms:
@@ -10,5 +13,3 @@ galaxy_info:
         - 10
 
   galaxy_tags: []
-
-dependencies: []
