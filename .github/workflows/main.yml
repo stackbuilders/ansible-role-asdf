@@ -22,4 +22,4 @@ jobs:
           python-version: 3.x
           cache: pip
       - run: pip install -r requirements.txt
-      - run: mol test -s ${{ matrix.scenario }}
+      - run: molecule test -s ${{ matrix.scenario }}
