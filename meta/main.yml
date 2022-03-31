@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  namespace: stackbuilders
   role_name: asdf
   author: Sebastián Estrella
   description: Installs asdf on Linux
